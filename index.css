@@ -1,0 +1,388 @@
+@import url('icon.css');
+
+.face{
+    z-index:-10;
+    left:40%;
+    top:18%;
+    position:absolute;
+    width: 640px;
+    height:380px;
+    // border-radius: 45%;
+    overflow:hidden;
+}
+
+#video, #cnvsCover,#cnvsMain {
+  zoom:200%;
+  left: 40%;
+  top: 40px;
+  width: 320px; 
+  height: 240px;
+  position: absolute;  
+}
+
+#cnvsMain {
+  zoom:200%;
+  top: 10%;
+  left: 40%;
+  width: 50%;
+  height:60%; 
+  visibility: hidden;
+}
+
+.poweranges {
+   visibility : hidden;
+}
+
+.poweranges > div {
+  z-index: 1000;
+}
+
+#pwrPsHzX1 {
+    position: absolute;
+    top:1%;
+    left:40%;
+    color: white;    
+}
+
+#pwrPsHzX2 {
+    position: absolute;
+    top:1%;
+    left:64%;
+    color: white;    
+}
+
+#pwrPsHzX1 , #pwrPsHzX2 {
+    width: 23%;
+} 
+
+#pwrPsVrX1 {
+    position: absolute;
+    top:10%;
+    height:25%;
+    color: white;    
+}
+
+#pwrPsVrX2 {
+    position: absolute;
+    top:45%;
+    height:25%;
+    color: white;    
+}
+
+#pwrPsVrX1, #pwrPsVrX2 {      
+      left:37%;
+      height:26%;
+}
+
+#sampleCntxA {
+    zoom:70%;
+    position: absolute;
+    top:75%;
+    left:19%;
+    visibility : hidden;
+}
+
+#sampleCntxB {
+    position: absolute;
+    top:75%;
+    left:37%;
+    visibility : hidden;
+}
+
+#chosenCnvs {
+   position: absolute;
+   top:55%;
+   left:10px;
+   visibility: hidden;
+}
+
+#paletaMexas {
+    z-index: 100;
+    top: 90vh;
+    right:100px;
+    position: absolute;
+}
+
+#paletaMexas > .roll img {
+    width: 50PX; 
+    margin: 5px; 
+}
+
+#paletaMexas > .roll img:hover{
+    cursor: pointer;
+}
+
+
+#colorPicker{
+  z-index:2000;
+  left:-17%;
+  top:15%; 
+  display:none;
+}
+
+#containerKonva {
+   z-index:100; 
+   position: absolute; 
+   top: 10px;
+}
+
+html{
+    background-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  page: port;
+}
+
+#sidebarContainer {
+    display: block; 
+}   
+
+input[type="color"] {
+    position:absolute;
+    margin-top:15px;
+    left:19px;
+    border-radius:50%;
+    height:32px;
+    opacity: 0; 
+}
+
+.slider-wrapper {
+    z-index:5000;
+    margin: 50px 0 30px 30px;
+    position: absolute;
+    display: none ;
+}  
+
+.horizontal-wrapper-Position {
+    width: 200px;
+    top:480px;
+    left:440px;
+}
+
+.horizontal-wrapper-Position div {
+    position:absolute;
+    left: 85px;
+    top: -45px;
+    color: white; 
+}
+        
+.horizontal-wrapper {
+    width: 200px;
+    top:560px;
+    left:440px;
+}
+
+.horizontal-wrapper div {
+    position:absolute;
+    left: 45px;
+    top: -45px;
+    color: white; 
+}
+                
+.vertical-wrapper {
+    height: 200px;
+    width: auto;
+    top:380px;
+    left:300px;                    
+}
+
+.vertical-wrapper div {
+    position:absolute;
+    -webkit-transform: rotate(-90deg);
+    left: -60px;
+    top: 85px;
+    color: white; 
+}
+
+.vertical-wrapper-Position {
+    height: 200px;
+    width: auto;
+    top:380px;
+    left:380px;                    
+}
+
+.vertical-wrapper-Position div {
+    position:absolute;
+    -webkit-transform: rotate(-90deg);
+    left: -45px;
+    top: 85px;
+    color: white; 
+}
+
+#toggleBeard {
+    position: absolute;        
+    color:white;
+    background-color: blue;
+    z-index: 2000;
+    display: inline-block; 
+    right: 120px; 
+    top: 0px;
+    width:22px;
+    height:120%;
+    transition: all 0.5s ease-in-out;
+}
+
+#sidebarBeard{
+    position: absolute;    
+    z-index:400; 
+    display: inline-block; 
+    top: 0px; 
+    height: 120%; 
+    width: 120px; 
+    right: -100px; 
+    transition: all 0.5s ease-in-out;
+}
+
+#toggleManHair {
+    position: absolute;    
+    color:white;
+    background-color: #66ccff;
+    z-index:1000;
+    display: inline-block; 
+    right: 120px; 
+    top: 0px;
+    width:22px;
+    height:120%;
+    transition: all 0.5s ease-in-out;
+}
+
+#sidebarManHair{
+    position: absolute;
+    z-index:500; 
+    display: inline-block; 
+    top: 0px; 
+    height: 120%; 
+    width: 120px; 
+    right: -120px; 
+    transition: all 0.5s ease-in-out;
+}
+
+#toggleWomanHair {
+    position: absolute;             
+    color:white;
+    background-color: red;
+    z-index:1000;
+    display: inline-block; 
+    right: 140px; 
+    top: 0px;
+    width:22px;
+    height:120%;
+    transition: all 0.5s ease-in-out;
+}
+
+#sidebarWomanHair{
+    position: absolute;        
+    z-index:300; 
+    display: inline-block; 
+    top: 0px; 
+    height: 120%; 
+    width: 140px; 
+    right: -100px; 
+    transition: all 0.5s ease-in-out;
+}
+
+#abaManHair{
+    font-size:16px;
+    font-weight: bold;
+    position:relative;
+    left:-60px;
+    width: 150px;
+    height: 30px;
+    -webkit-transform: rotate(-90deg);
+    top:37%;
+}
+
+#abaWomanHair{
+    font-size:16px;
+    font-weight: bold;
+    position:relative;
+    left:-60px;
+    width: 150px;
+    height: 30px;
+    -webkit-transform: rotate(-90deg);
+    top:37%;
+}        
+
+#abaBeard {
+    font-size:16px;
+    font-weight: bold;
+    position:relative;
+    left:-60px;
+    width: 150px;
+    height: 30px;
+    -webkit-transform: rotate(-90deg);
+    top:37%;
+}
+
+.roll {
+    width:120;
+    height:100vh;
+    overflow-y: auto;
+}
+
+.vertical-menu {
+    width: 120px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}       
+
+.vertical-menu img {
+    width: 90px;
+}       
+ 
+.controls{
+    z-index:5000;
+    top:78%;
+    left:53%;
+    position: absolute;
+    width: 40%;
+}
+
+.controls a{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #111;
+    padding: 15px;
+    line-height: 0;
+    opacity: 0.7;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.controls a:hover{
+    opacity: 1;
+}
+
+.controls a.disabled{
+    background-color: #555;
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
+
+.controls a.disabled:hover{
+    opacity: 0.5;
+}
+
+.controls a i{
+    font-size: 60px;
+}

@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <script type="text/javascript" src="tinycolorpicker.js"></script>
+  <script src="konva.min.js"></script>  
+  <script src="tracking-min.js"></script>
+  <script src="face-min.js"></script>
+  <script src="index.js"></script>
+  <script src="powerange.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="powerange.min.css" />  
+  <link rel="stylesheet" href="tinycolorpicker.css" type="text/css" media="screen"/>
+
+</head>
+<body>
+
+  <!-- 
+  
+	  A execução depende do Eletron, para execução deste:
+	  
+		npm start 
+
+      Para executar em mp4 não esquecer de alterar lá no 
+      javascript para tracking.track('#video', tracker) 
+      e tambem o posicionamento das varaveis Xcoord e
+      Ycoord - Nell - Out/18 
+
+  -->    
+
+  <div id = "sidebarContainer">    
+          <div id = "sidebarManHair">
+              <div class="vertical-menu vertical-menu-hair">
+                  <div id="toggleManHair">
+                      <div id="abaManHair">
+                          <center>
+                              cortes masculinos
+                          </center>    
+                      </div>
+                  </div>                
+                  <div class = "roll">
+                  </div>  
+              </div>        
+          </div> 
+          <div id="sidebarBeard">
+              <div class="vertical-menu vertical-menu-beard">
+                  <div id="toggleBeard">
+                      <div id="abaBeard">
+                          <center>
+                              barbas
+                          </center> 
+                      </div>
+                  </div>                
+                  <div class = "roll">
+                  </div>  
+              </div>        
+          </div> 
+
+          <div id="sidebarWomanHair">
+              <div class="vertical-menu vertical-menu-hair">
+                  <div id="toggleWomanHair">
+                      <div id="abaWomanHair">
+                          <center>
+                              cortes femininos
+                          </center> 
+                      </div>
+                  </div>                
+                  <div class = "roll">
+                  </div>  
+              </div>        
+          </div> 
+  </div>
+
+  <video id="video" width="320" height="240" preload autoplay loop muted>
+      <source src="video/alisha.mp4" type="video/mp4">
+  </video>
+
+  <div class="face"></div>
+
+  <div id="colorPicker">
+      <a class="color">
+          <div class="colorInner"></div>
+      </a>
+      <div class="track"></div>
+      <ul class="dropdown">
+          <li></li>
+      </ul>
+      <input type="hidden" class="colorInput"/>
+  </div>
+
+  <div id="containerKonva"></div>        
+
+  <canvas id="cnvsCover"></canvas>        
+  <canvas id="cnvsMain"></canvas>
+  <canvas id="sampleCntxA"></canvas>
+  <canvas id="sampleCntxB"></canvas>
+  <canvas id="chosenCnvs"></canvas>  
+
+  <div id="paletaMexas">
+     <div class = "roll">
+      </div>  
+  </div> 
+
+  <div class = "poweranges"> 
+
+    <div id = "pwrPsHzX1"> 
+         <div style = "margin:15px" >x1</div>
+         <input id = "pwrHzX1" />
+    </div>  
+
+    <div id = "pwrPsVrX1"> 
+         <div>x1</div>
+         <input id = "pwrVrX1" />
+    </div>  
+
+    <div id = "pwrPsHzX2"> 
+         <div style = "margin:15px">x2</div>
+         <input id = "pwrHzX2" />
+    </div>  
+
+    <div id = "pwrPsVrX2"> 
+         <div>x2</div>
+         <input id = "pwrVrX2" />
+    </div>  
+
+  </div>   
+
+  <div class="controls">
+      <a href="#" id="delete_photo" title="limpar" ><i class="material-icons">delete</i></a>
+      <a href="#" id="take_photo" title="congelar"><i class="material-icons">camera_alt</i></a>            
+      <a href="#" id="light" title="lampada"><i class="material-icons">wb_incandescent</i></a>
+      <a href="#" id="close_app" title="Encerrar"><i class="material-icons">touch_app</i></a>
+  </div> 
+
+</body>
+</html>
